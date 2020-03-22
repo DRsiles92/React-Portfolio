@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
+
 function About() {
   return (
     <div>
@@ -11,6 +12,9 @@ function About() {
         {/* <img src="/Users/debbie/Documents/portfolio/public/me.jpg" alt="me"></img> */}
         <h1>Debbie Reategui Siles</h1>
         <h2>Full Stack Developer</h2>
+        <a href="https://github.com/DRsiles92">Github</a> |
+        <a href="https://www.linkedin.com/in/debbie-reategui-siles-aab76992/">LinkedIn</a>
+
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>

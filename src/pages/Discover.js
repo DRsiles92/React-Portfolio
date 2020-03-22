@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import API from "../utils/API";
-import Card from "../components/Card";
-import Alert from "../components/Alert";
+
+
 
 class Discover extends Component {
   state = {
@@ -10,10 +9,7 @@ class Discover extends Component {
     matchCount: 0
   };
 
-  // When the component mounts, load the next dog to be displayed
-  componentDidMount() {
-    this.loadNextDog();
-  }
+
 
   handleBtnClick = event => {
     // Get the data-value of the clicked button
@@ -39,15 +35,7 @@ class Discover extends Component {
     this.loadNextDog();
   };
 
-  loadNextDog = () => {
-    API.getRandomDog()
-      .then(res =>
-        this.setState({
-          image: res.data.message
-        })
-      )
-      .catch(err => console.log(err));
-  };
+ 
 
   render() {
     return (
